@@ -1,0 +1,94 @@
+
+.todo-window{
+    display: flex;
+    flex-direction: row;
+    margin: 10px 20px;
+    column-gap: 20px;
+
+    .todolist-box {
+        display: grid;
+        row-gap: 10px;
+        width: 60%;
+        float: left;
+    
+        .form-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 80px;
+            column-gap: 5px;
+        }
+    
+        .table-main {
+            // Layout
+            display: grid;
+            grid-template-rows: 50px;
+            grid-auto-rows: 50px;
+            row-gap: 5px;
+    
+            .header-wrapper {
+                display: grid;
+                grid-template-columns: 1fr 170px;
+                place-items: center;
+                border: 1px solid $black-color;
+    
+                span {
+                    font-weight: bold;
+                }
+            }
+    
+            .row-wrapper {
+                display: grid;
+                grid-template-columns: 1fr repeat(2, 80px);
+                column-gap: 5px;
+                align-items: center;
+    
+                span {
+                    margin-left: 15px;
+                    font-style: italic;
+                }
+            }
+    
+        }
+
+    }
+
+    .todo-urgent {
+        display: block;
+        width: 40%;
+        float: right;
+        row-gap: 20px;
+
+        .table-main {
+            // Layout
+            display: grid;
+            grid-template-rows: 83px;
+            grid-auto-rows: 50px;
+            row-gap: 5px;
+
+            .header-wrapper {
+                display: grid;
+                place-items: center;
+                border: 1px solid $black-color;
+    
+    
+                span {
+                    display: grid;
+                    font-weight: bold;
+                    justify-content: center;
+                }
+            }
+    
+            .row-wrapper {
+                display: grid;
+                column-gap: 5px;
+                align-items: center;
+    
+                span {
+                    margin-left: 15px;
+                    font-style: italic;
+    
+                }
+            }
+        }
+        
+    }
+}
