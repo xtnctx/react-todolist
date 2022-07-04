@@ -1,0 +1,39 @@
+
+
+.todo-box {
+    // margin: 10px;
+    // display: grid;
+    // justify-content: center;
+    // align-items: center;
+    // row-gap: 5px;
+    // float: right;
+
+    height: 100%;
+    width: 20%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: rgb(17, 132, 101);
+    overflow-x: hidden;
+    padding-top: 50px;
+
+    .todo-form{
+        // height: 100vh;
+        display: flex;
+        flex-direction: row;
+
+        justify-content: center;
+        align-items: center;
+        column-gap: 10px;
+
+    }
+    
+    .remaining-todo {
+        font-style: italic;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
